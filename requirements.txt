@@ -1,0 +1,16 @@
+# Direct dependencies, pinned to the versions installed and tested in Stage 1 (Python 3.11).
+# Install: pip install -r requirements.txt && pip install -e .
+grad-cam==1.5.7
+gradio==6.30.0
+gradio_client==2.7.2
+matplotlib==3.11.2
+numpy==2.4.6
+openai==3.31.0
+pillow==12.3.0
+pytest==9.1.1
+pytest-cov==7.1.0
+python-dotenv==1.2.4
+ruff==0.17.0
+scikit-learn==1.9.1
+torch==2.14.1
+torchvision==0.29.1
