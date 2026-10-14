@@ -1,0 +1,106 @@
+{
+  "counts": {
+    "nCT": 9979,
+    "pCT": 4001,
+    "NiCT": 5705
+  },
+  "total": 19685,
+  "unreadable": [],
+  "image_modes": {
+    "RGB": 19685
+  },
+  "distinct_sizes": 4,
+  "most_common_sizes": {
+    "512x512": 13461,
+    "575x575": 3450,
+    "1211x1211": 2469,
+    "574x574": 305
+  },
+  "duplicate_groups": 55,
+  "duplicate_extra_files": 55,
+  "cross_class_duplicate_groups": 0,
+  "duplicate_examples": [
+    [
+      "NiCT5.jpg",
+      "NiCT6.jpg"
+    ],
+    [
+      "NiCT38.jpg",
+      "NiCT39.jpg"
+    ],
+    [
+      "NiCT71.jpg",
+      "NiCT72.jpg"
+    ],
+    [
+      "NiCT104.jpg",
+      "NiCT105.jpg"
+    ],
+    [
+      "NiCT137.jpg",
+      "NiCT138.jpg"
+    ],
+    [
+      "NiCT170.jpg",
+      "NiCT171.jpg"
+    ],
+    [
+      "NiCT203.jpg",
+      "NiCT204.jpg"
+    ],
+    [
+      "NiCT236.jpg",
+      "NiCT237.jpg"
+    ],
+    [
+      "NiCT269.jpg",
+      "NiCT270.jpg"
+    ],
+    [
+      "NiCT302.jpg",
+      "NiCT303.jpg"
+    ]
+  ],
+  "reference_counts": {
+    "nCT": 9979,
+    "pCT": 4001,
+    "NiCT": 5705
+  },
+  "filename_patterns": {
+    "nCT#.jpg": 9979,
+    "pCT#.jpg": 4001,
+    "NiCT#.jpg": 5705
+  },
+  "split_sizes": {
+    "train": 13778,
+    "val": 2951,
+    "test": 2956
+  },
+  "split_sizes_per_class": {
+    "train": {
+      "nCT": 6985,
+      "pCT": 2800,
+      "NiCT": 3993
+    },
+    "val": {
+      "nCT": 1496,
+      "pCT": 600,
+      "NiCT": 855
+    },
+    "test": {
+      "nCT": 1498,
+      "pCT": 601,
+      "NiCT": 857
+    }
+  },
+  "reference_split_sizes": {
+    "train": 13778,
+    "val": 2951,
+    "test": 2956
+  },
+  "duplicates_across_splits": {
+    "train-val": 12,
+    "train-test": 15,
+    "val-test": 0
+  }
+}
