@@ -1,0 +1,199 @@
+{
+  "checkpoint": "/Users/alexvrabie05/Desktop/HelloWorld/covid-ct-classifier/outputs/checkpoints/best.pth",
+  "device": "mps",
+  "splits": {
+    "train": {
+      "loss": 0.009666636342098927,
+      "n": 13778,
+      "accuracy": 0.9960807083756713,
+      "macro_f1": 0.9960532331661885,
+      "per_class": {
+        "nCT": {
+          "precision": 0.9984204480183803,
+          "recall": 0.9954187544738726,
+          "f1": 0.996917341744928,
+          "support": 6985
+        },
+        "pCT": {
+          "precision": 0.9996415770609319,
+          "recall": 0.9960714285714286,
+          "f1": 0.9978533094812164,
+          "support": 2800
+        },
+        "NiCT": {
+          "precision": 0.9895626242544732,
+          "recall": 0.9972451790633609,
+          "f1": 0.9933890482724211,
+          "support": 3993
+        }
+      },
+      "confusion_matrix": [
+        [
+          6953,
+          1,
+          31
+        ],
+        [
+          0,
+          2789,
+          11
+        ],
+        [
+          11,
+          0,
+          3982
+        ]
+      ]
+    },
+    "val": {
+      "loss": 0.02205626179706884,
+      "n": 2951,
+      "accuracy": 0.9935615045747205,
+      "macro_f1": 0.9935213279440945,
+      "per_class": {
+        "nCT": {
+          "precision": 0.9959812458137978,
+          "recall": 0.9939839572192514,
+          "f1": 0.9949815991970559,
+          "support": 1496
+        },
+        "pCT": {
+          "precision": 0.9983277591973244,
+          "recall": 0.995,
+          "f1": 0.996661101836394,
+          "support": 600
+        },
+        "NiCT": {
+          "precision": 0.986046511627907,
+          "recall": 0.991812865497076,
+          "f1": 0.9889212827988338,
+          "support": 855
+        }
+      },
+      "confusion_matrix": [
+        [
+          1487,
+          0,
+          9
+        ],
+        [
+          0,
+          597,
+          3
+        ],
+        [
+          6,
+          1,
+          848
+        ]
+      ]
+    },
+    "test": {
+      "loss": 0.018198086257203892,
+      "n": 2956,
+      "accuracy": 0.9922192151556157,
+      "macro_f1": 0.9916468249436065,
+      "per_class": {
+        "nCT": {
+          "precision": 0.9959839357429718,
+          "recall": 0.9933244325767691,
+          "f1": 0.9946524064171123,
+          "support": 1498
+        },
+        "pCT": {
+          "precision": 0.9916943521594684,
+          "recall": 0.9933444259567388,
+          "f1": 0.9925187032418953,
+          "support": 601
+        },
+        "NiCT": {
+          "precision": 0.986046511627907,
+          "recall": 0.9894982497082847,
+          "f1": 0.9877693651718114,
+          "support": 857
+        }
+      },
+      "confusion_matrix": [
+        [
+          1488,
+          2,
+          8
+        ],
+        [
+          0,
+          597,
+          4
+        ],
+        [
+          6,
+          3,
+          848
+        ]
+      ]
+    }
+  },
+  "majority_baseline_test": {
+    "predicted_class": "nCT",
+    "n": 2956,
+    "accuracy": 0.506765899864682,
+    "macro_f1": 0.2242179314473881,
+    "per_class": {
+      "nCT": {
+        "precision": 0.506765899864682,
+        "recall": 1.0,
+        "f1": 0.6726537943421643,
+        "support": 1498
+      },
+      "pCT": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 601
+      },
+      "NiCT": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 857
+      }
+    },
+    "confusion_matrix": [
+      [
+        1498,
+        0,
+        0
+      ],
+      [
+        601,
+        0,
+        0
+      ],
+      [
+        857,
+        0,
+        0
+      ]
+    ]
+  },
+  "original_repo_test_accuracy_reference": 0.9976,
+  "consistency_check": {
+    "epoch": 10,
+    "tolerance": 0.002,
+    "recomputed": {
+      "loss": 0.02205626179706884,
+      "accuracy": 0.9935615045747205,
+      "macro_f1": 0.9935213279440945
+    },
+    "training_log": {
+      "loss": 0.02205626179706884,
+      "accuracy": 0.9935615045747205,
+      "macro_f1": 0.9935213279440945
+    },
+    "abs_diff": {
+      "loss": 0.0,
+      "accuracy": 0.0,
+      "macro_f1": 0.0
+    },
+    "passed": true
+  }
+}

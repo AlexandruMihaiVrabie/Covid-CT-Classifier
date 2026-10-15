@@ -1,0 +1,16 @@
+device=mps train=13778 val=2951 epochs=15
+epoch 1/15 | train loss 0.1859 acc 0.9298 | val loss 0.0480 acc 0.9817 f1 0.9813 *best* | 265s + 21s
+epoch 2/15 | train loss 0.1093 acc 0.9594 | val loss 0.0426 acc 0.9827 f1 0.9820 *best* | 259s + 18s
+epoch 3/15 | train loss 0.0932 acc 0.9642 | val loss 0.0380 acc 0.9878 f1 0.9872 *best* | 262s + 18s
+epoch 4/15 | train loss 0.0804 acc 0.9695 | val loss 0.0354 acc 0.9878 f1 0.9867 | 281s + 18s
+epoch 5/15 | train loss 0.0673 acc 0.9741 | val loss 0.0305 acc 0.9905 f1 0.9896 *best* | 289s + 21s
+epoch 6/15 | train loss 0.0678 acc 0.9738 | val loss 0.0397 acc 0.9861 f1 0.9850 | 298s + 15s
+epoch 7/15 | train loss 0.0605 acc 0.9774 | val loss 0.0288 acc 0.9915 f1 0.9905 *best* | 239s + 14s
+epoch 8/15 | train loss 0.0547 acc 0.9789 | val loss 0.0313 acc 0.9905 f1 0.9900 | 258s + 15s
+epoch 9/15 | train loss 0.0572 acc 0.9793 | val loss 0.0359 acc 0.9895 f1 0.9886 | 252s + 15s
+epoch 10/15 | train loss 0.0568 acc 0.9788 | val loss 0.0221 acc 0.9936 f1 0.9935 *best* | 270s + 21s
+epoch 11/15 | train loss 0.0540 acc 0.9796 | val loss 0.0327 acc 0.9909 f1 0.9905 | 305s + 18s
+epoch 12/15 | train loss 0.0489 acc 0.9821 | val loss 0.0257 acc 0.9932 f1 0.9928 | 286s + 19s
+epoch 13/15 | train loss 0.0446 acc 0.9827 | val loss 0.0546 acc 0.9803 f1 0.9787 | 304s + 19s
+epoch 14/15 | train loss 0.0421 acc 0.9853 | val loss 0.0342 acc 0.9922 f1 0.9923 | 345s + 17s
+epoch 15/15 | train loss 0.0413 acc 0.9851 | val loss 0.0262 acc 0.9929 f1 0.9926 | 269s + 16s
