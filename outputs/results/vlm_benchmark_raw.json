@@ -1,0 +1,1707 @@
+{
+  "vlm_model": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+  "prompt": "You are shown one axial chest CT slice. Classify it into exactly one of these classes:\nnCT: normal. The lungs are visible and show no signs of COVID-19 pneumonia.\npCT: COVID-19 positive. The lungs are visible and show findings consistent with COVID-19 pneumonia, such as ground-glass opacities or consolidation.\nNiCT: non-informative. The slice does not show enough lung tissue to judge, for example it is at the level of the neck or the upper abdomen.\nAnswer with exactly one label: nCT, pCT or NiCT. Do not write anything else.",
+  "seed": 42,
+  "rows": [
+    {
+      "image": "nCT888.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 0.9999997615814209,
+        "pCT": 2.9062343287478143e-07,
+        "NiCT": 3.770315615270192e-09
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 3.6857073749997653,
+      "error": null
+    },
+    {
+      "image": "nCT229.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 0.99997878074646,
+        "pCT": 2.0137676983722486e-05,
+        "NiCT": 1.1013146377081284e-06
+      },
+      "vlm_raw": "pCT",
+      "vlm_label": "pCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 3.555694582988508,
+      "error": null
+    },
+    {
+      "image": "nCT126.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 0.999976634979248,
+        "pCT": 3.848531804351296e-08,
+        "NiCT": 2.3388372937915847e-05
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 5.321339000016451,
+      "error": null
+    },
+    {
+      "image": "nCT4353.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 0.9999144077301025,
+        "pCT": 1.4636813148172223e-06,
+        "NiCT": 8.410170266870409e-05
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 2.965579791984055,
+      "error": null
+    },
+    {
+      "image": "nCT4012.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 0.9999996423721313,
+        "pCT": 5.86828825532848e-08,
+        "NiCT": 3.3243102848246053e-07
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 4.354898125020554,
+      "error": null
+    },
+    {
+      "image": "nCT3789.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 0.9999961853027344,
+        "pCT": 3.277244104538113e-06,
+        "NiCT": 5.388901627156883e-07
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 3.3470282499911264,
+      "error": null
+    },
+    {
+      "image": "nCT2595.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 1.0,
+        "pCT": 5.134335949561093e-14,
+        "NiCT": 2.3757124739676172e-11
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 3.652014750026865,
+      "error": null
+    },
+    {
+      "image": "nCT2148.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 0.999993085861206,
+        "pCT": 6.630442840105388e-06,
+        "NiCT": 2.6475777303858195e-07
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 3.222993791976478,
+      "error": null
+    },
+    {
+      "image": "nCT9261.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 1.0,
+        "pCT": 2.222015765829255e-10,
+        "NiCT": 1.5027427913150149e-10
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 2.8851785409788135,
+      "error": null
+    },
+    {
+      "image": "nCT7574.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 0.9999884366989136,
+        "pCT": 1.1426340279285796e-05,
+        "NiCT": 8.62711928562021e-08
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 3.1762560000061058,
+      "error": null
+    },
+    {
+      "image": "nCT1977.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 0.9999994039535522,
+        "pCT": 5.773532052444352e-07,
+        "NiCT": 2.9040540638902712e-08
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 4.634366292011691,
+      "error": null
+    },
+    {
+      "image": "nCT8200.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 1.0,
+        "pCT": 6.532785978841105e-10,
+        "NiCT": 2.1497548630122765e-08
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 2.80364479200216,
+      "error": null
+    },
+    {
+      "image": "nCT6133.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 1.0,
+        "pCT": 9.945845362568928e-12,
+        "NiCT": 4.299534062113253e-09
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 6.346286999993026,
+      "error": null
+    },
+    {
+      "image": "nCT1321.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 1.0,
+        "pCT": 9.23432015668144e-15,
+        "NiCT": 2.0870221783403364e-12
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 3.0628064580087084,
+      "error": null
+    },
+    {
+      "image": "nCT1308.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 1.0,
+        "pCT": 1.5142868783988434e-13,
+        "NiCT": 4.901900552134464e-10
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 7.976380625012098,
+      "error": null
+    },
+    {
+      "image": "nCT2064.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 0.9999992847442627,
+        "pCT": 1.2257571846419069e-08,
+        "NiCT": 6.867912816233002e-07
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 3.2324719589960296,
+      "error": null
+    },
+    {
+      "image": "nCT3706.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 0.9999985694885254,
+        "pCT": 2.073311478056894e-08,
+        "NiCT": 1.4601794191548834e-06
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 11.36733741601347,
+      "error": null
+    },
+    {
+      "image": "nCT3892.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 0.9999997615814209,
+        "pCT": 3.0864487854387335e-08,
+        "NiCT": 2.2656581677438226e-07
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 2.7838767920038663,
+      "error": null
+    },
+    {
+      "image": "nCT7156.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 0.9999598264694214,
+        "pCT": 3.724064663401805e-05,
+        "NiCT": 2.9785569495288655e-06
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 7.188642833993072,
+      "error": null
+    },
+    {
+      "image": "nCT8319.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 0.999996542930603,
+        "pCT": 1.9768021957133897e-06,
+        "NiCT": 1.380788603455585e-06
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 4.531760290992679,
+      "error": null
+    },
+    {
+      "image": "nCT1270.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 0.9999982118606567,
+        "pCT": 1.8370005818724167e-06,
+        "NiCT": 5.119924928465025e-09
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 3.265372290974483,
+      "error": null
+    },
+    {
+      "image": "nCT7754.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 0.9999992847442627,
+        "pCT": 7.020810812718992e-07,
+        "NiCT": 3.3862065151879506e-08
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 6.828847416007193,
+      "error": null
+    },
+    {
+      "image": "nCT350.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 0.999997615814209,
+        "pCT": 1.834838531111771e-10,
+        "NiCT": 2.406999556114897e-06
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 6.565248500002781,
+      "error": null
+    },
+    {
+      "image": "nCT9781.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 0.9996610879898071,
+        "pCT": 5.735999479838938e-07,
+        "NiCT": 0.0003382805734872818
+      },
+      "vlm_raw": "",
+      "vlm_label": null,
+      "vlm_cached": false,
+      "vlm_latency_s": 6.098032916983357,
+      "error": null
+    },
+    {
+      "image": "nCT8990.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 0.9999665021896362,
+        "pCT": 1.9343291569384746e-05,
+        "NiCT": 1.415240785718197e-05
+      },
+      "vlm_raw": "",
+      "vlm_label": null,
+      "vlm_cached": false,
+      "vlm_latency_s": 28.209101374988677,
+      "error": null
+    },
+    {
+      "image": "nCT959.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 0.9999998807907104,
+        "pCT": 1.2255178205577977e-07,
+        "NiCT": 2.332708781693782e-08
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 3.1790131669840775,
+      "error": null
+    },
+    {
+      "image": "nCT610.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 0.9999927282333374,
+        "pCT": 4.171145633335982e-07,
+        "NiCT": 6.876233783259522e-06
+      },
+      "vlm_raw": "pCT",
+      "vlm_label": "pCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 4.5459297920169774,
+      "error": null
+    },
+    {
+      "image": "nCT3734.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 1.0,
+        "pCT": 2.4810066889813243e-08,
+        "NiCT": 3.096312539696555e-09
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 4.668160583998542,
+      "error": null
+    },
+    {
+      "image": "nCT6524.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 0.9999998807907104,
+        "pCT": 1.3580221391862324e-09,
+        "NiCT": 1.289437108198399e-07
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 2.718321000022115,
+      "error": null
+    },
+    {
+      "image": "nCT8168.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 0.9999978542327881,
+        "pCT": 1.7272427612624597e-06,
+        "NiCT": 5.190076421968115e-07
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 4.021825999981957,
+      "error": null
+    },
+    {
+      "image": "nCT4387.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 1.0,
+        "pCT": 3.4760958556034893e-09,
+        "NiCT": 4.423935706654447e-08
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 3.443517959007295,
+      "error": null
+    },
+    {
+      "image": "nCT1085.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 0.9999881982803345,
+        "pCT": 4.0512491068511736e-06,
+        "NiCT": 7.779210136504844e-06
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 5.122036042012041,
+      "error": null
+    },
+    {
+      "image": "nCT2886.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 0.9999988079071045,
+        "pCT": 1.8801908652221755e-07,
+        "NiCT": 9.686468729341868e-07
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 3.6062178749998566,
+      "error": null
+    },
+    {
+      "image": "nCT9514.jpg",
+      "true_label": "nCT",
+      "true_index": 0,
+      "cnn_label": "nCT",
+      "cnn_index": 0,
+      "cnn_probabilities": {
+        "nCT": 0.9999945163726807,
+        "pCT": 2.6340132990299026e-06,
+        "NiCT": 2.871291371775442e-06
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 2.7283602499810513,
+      "error": null
+    },
+    {
+      "image": "pCT3642.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 0.00010091524018207565,
+        "pCT": 0.9986168146133423,
+        "NiCT": 0.001282252254895866
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 47.809431458998006,
+      "error": null
+    },
+    {
+      "image": "pCT3164.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 9.522736218059435e-05,
+        "pCT": 0.9998273253440857,
+        "NiCT": 7.742055458948016e-05
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 3.0391887909790967,
+      "error": null
+    },
+    {
+      "image": "pCT2765.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 1.8500833903090097e-05,
+        "pCT": 0.9999464750289917,
+        "NiCT": 3.50454865838401e-05
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 7.023957833007444,
+      "error": null
+    },
+    {
+      "image": "pCT2041.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 1.64155437687441e-06,
+        "pCT": 0.9999744892120361,
+        "NiCT": 2.381129888817668e-05
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 28.34819183399668,
+      "error": null
+    },
+    {
+      "image": "pCT2412.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 4.5921351556899026e-05,
+        "pCT": 0.9998869895935059,
+        "NiCT": 6.706798012601212e-05
+      },
+      "vlm_raw": "",
+      "vlm_label": null,
+      "vlm_cached": false,
+      "vlm_latency_s": 23.117773582984228,
+      "error": null
+    },
+    {
+      "image": "pCT3131.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 3.075104586969246e-06,
+        "pCT": 0.9999594688415527,
+        "NiCT": 3.7422094465000555e-05
+      },
+      "vlm_raw": "pCT",
+      "vlm_label": "pCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 2.702417583001079,
+      "error": null
+    },
+    {
+      "image": "pCT1740.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 1.7932063656189712e-06,
+        "pCT": 0.999985933303833,
+        "NiCT": 1.2267741112736985e-05
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 2.759634541987907,
+      "error": null
+    },
+    {
+      "image": "pCT1653.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 1.629468783903576e-06,
+        "pCT": 0.9999911785125732,
+        "NiCT": 7.210489002318354e-06
+      },
+      "vlm_raw": "pCT",
+      "vlm_label": "pCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 3.2333643329911865,
+      "error": null
+    },
+    {
+      "image": "pCT3412.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 0.0003062164469156414,
+        "pCT": 0.9681558609008789,
+        "NiCT": 0.03153788670897484
+      },
+      "vlm_raw": "pCT",
+      "vlm_label": "pCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 5.238852209004108,
+      "error": null
+    },
+    {
+      "image": "pCT1698.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 9.338983545603696e-06,
+        "pCT": 0.9999551773071289,
+        "NiCT": 3.553415444912389e-05
+      },
+      "vlm_raw": "pCT",
+      "vlm_label": "pCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 2.881731665984262,
+      "error": null
+    },
+    {
+      "image": "pCT3276.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 0.00046924332855269313,
+        "pCT": 0.9598303437232971,
+        "NiCT": 0.03970048204064369
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 4.630973874998745,
+      "error": null
+    },
+    {
+      "image": "pCT318.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 1.6321055227308534e-05,
+        "pCT": 0.9999500513076782,
+        "NiCT": 3.3643049391685054e-05
+      },
+      "vlm_raw": "pCT",
+      "vlm_label": "pCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 2.8431989999953657,
+      "error": null
+    },
+    {
+      "image": "pCT2685.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 0.00010165275307372212,
+        "pCT": 0.9998511075973511,
+        "NiCT": 4.7243669541785493e-05
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 3.7432297080231365,
+      "error": null
+    },
+    {
+      "image": "pCT1338.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 3.8620833947788924e-05,
+        "pCT": 0.9999291896820068,
+        "NiCT": 3.216359255020507e-05
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 5.907783707982162,
+      "error": null
+    },
+    {
+      "image": "pCT3895.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 0.00016346457414329052,
+        "pCT": 0.8547360897064209,
+        "NiCT": 0.14510048925876617
+      },
+      "vlm_raw": "",
+      "vlm_label": null,
+      "vlm_cached": false,
+      "vlm_latency_s": 7.838170167000499,
+      "error": null
+    },
+    {
+      "image": "pCT69.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 6.586705694644479e-06,
+        "pCT": 0.9998445510864258,
+        "NiCT": 0.00014886829012539238
+      },
+      "vlm_raw": "pCT",
+      "vlm_label": "pCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 8.051502125017578,
+      "error": null
+    },
+    {
+      "image": "pCT1833.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 7.492271834053099e-06,
+        "pCT": 0.9993471503257751,
+        "NiCT": 0.0006453539244830608
+      },
+      "vlm_raw": "pCT",
+      "vlm_label": "pCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 14.61122183300904,
+      "error": null
+    },
+    {
+      "image": "pCT3392.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 2.552362457208801e-05,
+        "pCT": 0.9920124411582947,
+        "NiCT": 0.007961979135870934
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 3.621087500010617,
+      "error": null
+    },
+    {
+      "image": "pCT158.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 1.9552353478502482e-06,
+        "pCT": 0.9999661445617676,
+        "NiCT": 3.1873925763648e-05
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 4.300251332984772,
+      "error": null
+    },
+    {
+      "image": "pCT770.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 7.185669346654322e-06,
+        "pCT": 0.9998799562454224,
+        "NiCT": 0.00011286595690762624
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 5.690228666993789,
+      "error": null
+    },
+    {
+      "image": "pCT2864.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 2.568652416812256e-05,
+        "pCT": 0.9990447163581848,
+        "NiCT": 0.0009295602212660015
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 3.356517917010933,
+      "error": null
+    },
+    {
+      "image": "pCT3295.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 3.461548112682067e-05,
+        "pCT": 0.9971755743026733,
+        "NiCT": 0.002789831953123212
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 2.660491541988449,
+      "error": null
+    },
+    {
+      "image": "pCT93.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 5.158849944564281e-06,
+        "pCT": 0.9999220371246338,
+        "NiCT": 7.274302333826199e-05
+      },
+      "vlm_raw": "pCT",
+      "vlm_label": "pCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 2.9930400000012014,
+      "error": null
+    },
+    {
+      "image": "pCT2241.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 3.0380320822587237e-05,
+        "pCT": 0.9998921155929565,
+        "NiCT": 7.7449505624827e-05
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 2.3793355420057196,
+      "error": null
+    },
+    {
+      "image": "pCT1516.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 1.3917690921516623e-05,
+        "pCT": 0.9998288154602051,
+        "NiCT": 0.0001572066539665684
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 3.1930788749887142,
+      "error": null
+    },
+    {
+      "image": "pCT1341.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 7.063979410304455e-06,
+        "pCT": 0.9999240636825562,
+        "NiCT": 6.882667366880924e-05
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 4.950885208992986,
+      "error": null
+    },
+    {
+      "image": "pCT249.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 1.3045470950601157e-05,
+        "pCT": 0.999902606010437,
+        "NiCT": 8.428024011664093e-05
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 9.98566595898592,
+      "error": null
+    },
+    {
+      "image": "pCT2843.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 0.0008270021644420922,
+        "pCT": 0.98307865858078,
+        "NiCT": 0.016094373539090157
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 3.181639874994289,
+      "error": null
+    },
+    {
+      "image": "pCT1580.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 1.0200179531238973e-05,
+        "pCT": 0.9999825954437256,
+        "NiCT": 7.207835096778581e-06
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 3.356496458000038,
+      "error": null
+    },
+    {
+      "image": "pCT251.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 1.311185656049929e-06,
+        "pCT": 0.9999932050704956,
+        "NiCT": 5.433505975815933e-06
+      },
+      "vlm_raw": "pCT",
+      "vlm_label": "pCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 2.494196333020227,
+      "error": null
+    },
+    {
+      "image": "pCT1717.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 8.16486863186583e-06,
+        "pCT": 0.9996737241744995,
+        "NiCT": 0.0003180672647431493
+      },
+      "vlm_raw": "pCT",
+      "vlm_label": "pCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 5.824395541014383,
+      "error": null
+    },
+    {
+      "image": "pCT3856.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 3.506758366711438e-05,
+        "pCT": 0.999896764755249,
+        "NiCT": 6.812774518039078e-05
+      },
+      "vlm_raw": "pCT",
+      "vlm_label": "pCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 3.2526944580022246,
+      "error": null
+    },
+    {
+      "image": "pCT3318.jpg",
+      "true_label": "pCT",
+      "true_index": 1,
+      "cnn_label": "pCT",
+      "cnn_index": 1,
+      "cnn_probabilities": {
+        "nCT": 0.00012302184768486768,
+        "pCT": 0.9992167949676514,
+        "NiCT": 0.0006601763889193535
+      },
+      "vlm_raw": "",
+      "vlm_label": null,
+      "vlm_cached": false,
+      "vlm_latency_s": 19.023102917009965,
+      "error": null
+    },
+    {
+      "image": "NiCT1972.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 0.0004224784206598997,
+        "pCT": 3.6398311920038395e-08,
+        "NiCT": 0.9995774626731873
+      },
+      "vlm_raw": "NiCT",
+      "vlm_label": "NiCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 4.448770791001152,
+      "error": null
+    },
+    {
+      "image": "NiCT3201.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 4.594419078784995e-05,
+        "pCT": 4.844389422942186e-08,
+        "NiCT": 0.999954104423523
+      },
+      "vlm_raw": "NiCT",
+      "vlm_label": "NiCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 16.23584574999404,
+      "error": null
+    },
+    {
+      "image": "NiCT3110.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 2.5793209715629928e-05,
+        "pCT": 1.6652640155712106e-08,
+        "NiCT": 0.999974250793457
+      },
+      "vlm_raw": "NiCT",
+      "vlm_label": "NiCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 3.0038999170064926,
+      "error": null
+    },
+    {
+      "image": "NiCT2254.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 0.0018526347121223807,
+        "pCT": 2.459812321831123e-06,
+        "NiCT": 0.9981448650360107
+      },
+      "vlm_raw": "",
+      "vlm_label": null,
+      "vlm_cached": false,
+      "vlm_latency_s": 27.1664773329976,
+      "error": null
+    },
+    {
+      "image": "NiCT5073.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 0.0004055405152030289,
+        "pCT": 0.012220586650073528,
+        "NiCT": 0.9873738884925842
+      },
+      "vlm_raw": "NiCT",
+      "vlm_label": "NiCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 5.091251874982845,
+      "error": null
+    },
+    {
+      "image": "NiCT2601.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 0.001083134557120502,
+        "pCT": 0.0021824431605637074,
+        "NiCT": 0.9967343807220459
+      },
+      "vlm_raw": "",
+      "vlm_label": null,
+      "vlm_cached": false,
+      "vlm_latency_s": 14.956371375010349,
+      "error": null
+    },
+    {
+      "image": "NiCT5255.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 0.00019374373368918896,
+        "pCT": 0.000138068018713966,
+        "NiCT": 0.9996681213378906
+      },
+      "vlm_raw": "NiCT",
+      "vlm_label": "NiCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 4.950914624991128,
+      "error": null
+    },
+    {
+      "image": "NiCT5166.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 0.0007961962255649269,
+        "pCT": 0.008800800889730453,
+        "NiCT": 0.9904029369354248
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 3.458638834010344,
+      "error": null
+    },
+    {
+      "image": "NiCT4904.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 0.00023089659225661308,
+        "pCT": 5.266392236080719e-06,
+        "NiCT": 0.9997639060020447
+      },
+      "vlm_raw": "NiCT",
+      "vlm_label": "NiCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 3.4620874999964144,
+      "error": null
+    },
+    {
+      "image": "NiCT141.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 0.0004371686663944274,
+        "pCT": 1.2381531632854603e-05,
+        "NiCT": 0.9995504021644592
+      },
+      "vlm_raw": "",
+      "vlm_label": null,
+      "vlm_cached": false,
+      "vlm_latency_s": 6.149889749998692,
+      "error": null
+    },
+    {
+      "image": "NiCT4628.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 0.003162920707836747,
+        "pCT": 1.6397923019439986e-08,
+        "NiCT": 0.9968370199203491
+      },
+      "vlm_raw": "NiCT",
+      "vlm_label": "NiCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 2.8459503339836374,
+      "error": null
+    },
+    {
+      "image": "NiCT4834.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 0.014002733863890171,
+        "pCT": 0.00015533150872215629,
+        "NiCT": 0.9858419299125671
+      },
+      "vlm_raw": "NiCT",
+      "vlm_label": "NiCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 5.192632291989867,
+      "error": null
+    },
+    {
+      "image": "NiCT2034.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 0.004184748511761427,
+        "pCT": 4.8259856555432634e-08,
+        "NiCT": 0.9958152174949646
+      },
+      "vlm_raw": "",
+      "vlm_label": null,
+      "vlm_cached": false,
+      "vlm_latency_s": 7.758068291994277,
+      "error": null
+    },
+    {
+      "image": "NiCT4197.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 0.0007668403559364378,
+        "pCT": 0.023867707699537277,
+        "NiCT": 0.9753654599189758
+      },
+      "vlm_raw": "",
+      "vlm_label": null,
+      "vlm_cached": false,
+      "vlm_latency_s": 7.611322791024577,
+      "error": null
+    },
+    {
+      "image": "NiCT5459.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 0.07150204479694366,
+        "pCT": 0.0019852493423968554,
+        "NiCT": 0.9265127778053284
+      },
+      "vlm_raw": "",
+      "vlm_label": null,
+      "vlm_cached": false,
+      "vlm_latency_s": 27.7478911250073,
+      "error": null
+    },
+    {
+      "image": "NiCT2472.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 0.00017203808238264173,
+        "pCT": 2.1385626602921093e-10,
+        "NiCT": 0.9998279809951782
+      },
+      "vlm_raw": "NiCT",
+      "vlm_label": "NiCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 5.692737542005489,
+      "error": null
+    },
+    {
+      "image": "NiCT1982.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 0.0005881608813069761,
+        "pCT": 7.742948643363334e-11,
+        "NiCT": 0.9994118213653564
+      },
+      "vlm_raw": "NiCT",
+      "vlm_label": "NiCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 18.323497374978615,
+      "error": null
+    },
+    {
+      "image": "NiCT3714.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 3.8073587802500697e-06,
+        "pCT": 1.896760082331639e-09,
+        "NiCT": 0.9999961853027344
+      },
+      "vlm_raw": "NiCT",
+      "vlm_label": "NiCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 27.674911208014237,
+      "error": null
+    },
+    {
+      "image": "NiCT3245.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 3.918180664186366e-05,
+        "pCT": 4.480560367170483e-09,
+        "NiCT": 0.9999607801437378
+      },
+      "vlm_raw": "NiCT",
+      "vlm_label": "NiCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 3.171495083021,
+      "error": null
+    },
+    {
+      "image": "NiCT2615.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 0.00012669108400586993,
+        "pCT": 2.6382119244772184e-07,
+        "NiCT": 0.9998730421066284
+      },
+      "vlm_raw": "NiCT",
+      "vlm_label": "NiCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 2.886181125009898,
+      "error": null
+    },
+    {
+      "image": "NiCT4845.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 0.0020912522450089455,
+        "pCT": 1.7639598581808968e-07,
+        "NiCT": 0.9979087114334106
+      },
+      "vlm_raw": "NiCT",
+      "vlm_label": "NiCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 5.6097252079925966,
+      "error": null
+    },
+    {
+      "image": "NiCT5194.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 0.0013442888157442212,
+        "pCT": 1.6466759689137689e-06,
+        "NiCT": 0.9986540079116821
+      },
+      "vlm_raw": "NiCT",
+      "vlm_label": "NiCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 5.299013042007573,
+      "error": null
+    },
+    {
+      "image": "NiCT4349.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 0.13172104954719543,
+        "pCT": 0.0006120663601905107,
+        "NiCT": 0.8676669001579285
+      },
+      "vlm_raw": "NiCT",
+      "vlm_label": "NiCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 7.0064533749828115,
+      "error": null
+    },
+    {
+      "image": "NiCT2318.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 0.0004394103598315269,
+        "pCT": 1.0849724452199894e-09,
+        "NiCT": 0.999560534954071
+      },
+      "vlm_raw": "NiCT",
+      "vlm_label": "NiCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 2.2724617079948075,
+      "error": null
+    },
+    {
+      "image": "NiCT5170.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 0.00035308930091559887,
+        "pCT": 0.008442727848887444,
+        "NiCT": 0.9912042021751404
+      },
+      "vlm_raw": "nCT",
+      "vlm_label": "nCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 8.830737749987748,
+      "error": null
+    },
+    {
+      "image": "NiCT2957.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 0.0003522411279845983,
+        "pCT": 2.0713575565878273e-07,
+        "NiCT": 0.9996474981307983
+      },
+      "vlm_raw": "NiCT",
+      "vlm_label": "NiCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 2.6129795410088263,
+      "error": null
+    },
+    {
+      "image": "NiCT574.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 3.752816837732098e-06,
+        "pCT": 9.470980666392848e-10,
+        "NiCT": 0.9999963045120239
+      },
+      "vlm_raw": "NiCT",
+      "vlm_label": "NiCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 7.8383108749985695,
+      "error": null
+    },
+    {
+      "image": "NiCT617.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 7.274135441548424e-06,
+        "pCT": 4.480561131003924e-07,
+        "NiCT": 0.9999922513961792
+      },
+      "vlm_raw": "NiCT",
+      "vlm_label": "NiCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 6.982789540983504,
+      "error": null
+    },
+    {
+      "image": "NiCT1325.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 4.93599600304151e-07,
+        "pCT": 5.656289658872993e-08,
+        "NiCT": 0.9999995231628418
+      },
+      "vlm_raw": "NiCT",
+      "vlm_label": "NiCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 10.68216124997707,
+      "error": null
+    },
+    {
+      "image": "NiCT2373.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 0.0006405696040019393,
+        "pCT": 2.4708441515031154e-08,
+        "NiCT": 0.9993594288825989
+      },
+      "vlm_raw": "NiCT",
+      "vlm_label": "NiCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 5.687247125024442,
+      "error": null
+    },
+    {
+      "image": "NiCT920.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 3.958731667808024e-06,
+        "pCT": 1.3458689718248706e-09,
+        "NiCT": 0.9999960660934448
+      },
+      "vlm_raw": "NiCT",
+      "vlm_label": "NiCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 4.890443707990926,
+      "error": null
+    },
+    {
+      "image": "NiCT1201.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 0.0006390258204191923,
+        "pCT": 1.6918567780521698e-05,
+        "NiCT": 0.9993440508842468
+      },
+      "vlm_raw": "",
+      "vlm_label": null,
+      "vlm_cached": false,
+      "vlm_latency_s": 10.813896792009473,
+      "error": null
+    },
+    {
+      "image": "NiCT785.jpg",
+      "true_label": "NiCT",
+      "true_index": 2,
+      "cnn_label": "NiCT",
+      "cnn_index": 2,
+      "cnn_probabilities": {
+        "nCT": 1.2835456800530665e-05,
+        "pCT": 3.4997010516235605e-06,
+        "NiCT": 0.9999836683273315
+      },
+      "vlm_raw": "NiCT",
+      "vlm_label": "NiCT",
+      "vlm_cached": false,
+      "vlm_latency_s": 5.674922167003388,
+      "error": null
+    }
+  ]
+}

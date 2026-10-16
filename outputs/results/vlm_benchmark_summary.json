@@ -1,0 +1,141 @@
+{
+  "vlm_model": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+  "n": 100,
+  "per_class_n": {
+    "nCT": 34,
+    "pCT": 33,
+    "NiCT": 33
+  },
+  "note": "Small sample: confidence intervals are wide. Unparseable VLM answers count as wrong.",
+  "cnn": {
+    "n": 100,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "per_class": {
+      "nCT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 34,
+        "correct": 34,
+        "recall_ci95": [
+          0.8984820937803899,
+          1.0
+        ]
+      },
+      "pCT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 33,
+        "correct": 33,
+        "recall_ci95": [
+          0.8957265699643882,
+          1.0
+        ]
+      },
+      "NiCT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 33,
+        "correct": 33,
+        "recall_ci95": [
+          0.8957265699643882,
+          1.0
+        ]
+      }
+    },
+    "confusion_matrix": [
+      [
+        34,
+        0,
+        0
+      ],
+      [
+        0,
+        33,
+        0
+      ],
+      [
+        0,
+        0,
+        33
+      ]
+    ],
+    "correct": 100,
+    "accuracy_ci95": [
+      0.9630051925239981,
+      0.9999999999999999
+    ]
+  },
+  "vlm": {
+    "n": 100,
+    "accuracy": 0.65,
+    "macro_f1": 0.6754161618880962,
+    "per_class": {
+      "nCT": {
+        "precision": 0.5882352941176471,
+        "recall": 0.8823529411764706,
+        "f1": 0.7058823529411765,
+        "support": 34,
+        "correct": 30,
+        "recall_ci95": [
+          0.7337882520370121,
+          0.9532862902656388
+        ]
+      },
+      "pCT": {
+        "precision": 0.8461538461538461,
+        "recall": 0.3333333333333333,
+        "f1": 0.4782608695652174,
+        "support": 33,
+        "correct": 11,
+        "recall_ci95": [
+          0.19750029467803698,
+          0.5039241820005003
+        ]
+      },
+      "NiCT": {
+        "precision": 1.0,
+        "recall": 0.7272727272727273,
+        "f1": 0.8421052631578947,
+        "support": 33,
+        "correct": 24,
+        "recall_ci95": [
+          0.5578211674561319,
+          0.849327273436772
+        ]
+      }
+    },
+    "confusion_matrix": [
+      [
+        30,
+        2,
+        0
+      ],
+      [
+        19,
+        11,
+        0
+      ],
+      [
+        2,
+        0,
+        24
+      ]
+    ],
+    "correct": 65,
+    "accuracy_ci95": [
+      0.5525426042919797,
+      0.7363589534652197
+    ]
+  },
+  "vlm_unparseable": 12,
+  "vlm_unparseable_per_class": {
+    "nCT": 2,
+    "pCT": 3,
+    "NiCT": 7
+  },
+  "vlm_errors": 0
+}

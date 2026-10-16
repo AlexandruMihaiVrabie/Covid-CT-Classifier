@@ -1,0 +1,109 @@
+{
+  "probe_image": "pCT2369.jpg",
+  "probe_true_label": "pCT",
+  "listed_model_count": 81,
+  "listed_vision_like": [
+    "adept/fuyu-8b",
+    "meta/llama-3.2-11b-vision-instruct",
+    "meta/llama-3.2-90b-vision-instruct",
+    "meta/muse-glimmer-30b",
+    "microsoft/kosmos-2",
+    "microsoft/phi-3-vision-128k-instruct",
+    "nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1",
+    "nvidia/llama-nemotron-embed-vl-1b-v2",
+    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+    "nvidia/nemotron-3.5-super-vl-120b-a12b",
+    "nvidia/neva-22b",
+    "nvidia/vila"
+  ],
+  "results": [
+    {
+      "in_listing": true,
+      "model": "meta/llama-3.2-11b-vision-instruct",
+      "ok": true,
+      "answer": "nCT.",
+      "parsed_label": "nCT",
+      "latency_s": 14.71
+    },
+    {
+      "in_listing": true,
+      "model": "meta/llama-3.2-90b-vision-instruct",
+      "ok": false,
+      "status": 504,
+      "error": "InternalServerError: Error code: 504",
+      "elapsed_s": 286.6
+    },
+    {
+      "in_listing": true,
+      "model": "microsoft/phi-3-vision-128k-instruct",
+      "ok": false,
+      "status": 404,
+      "error": "NotFoundError: Error code: 404 - {'status': 404, 'title': 'Not Found', 'detail': \"Function '20f2537e-8593-4eb9-ad40-60eee3bbaa55': Not found for account 'jf5O_2WIqwN4rQ4IWUicY01x5WJ3SvXOYoN-7VbGGhw'\"}",
+      "elapsed_s": 0.55
+    },
+    {
+      "in_listing": true,
+      "model": "nvidia/vila",
+      "ok": false,
+      "status": 404,
+      "error": "NotFoundError: Error code: 404 - {'status': 404, 'title': 'Not Found', 'detail': \"Function '1c8df143-2303-419b-8b28-b4dd82cfe113': Not found for account 'jf5O_2WIqwN4rQ4IWUicY01x5WJ3SvXOYoN-7VbGGhw'\"}",
+      "elapsed_s": 2.15
+    },
+    {
+      "in_listing": true,
+      "model": "nvidia/neva-22b",
+      "ok": false,
+      "status": 404,
+      "error": "NotFoundError: Error code: 404 - {'status': 404, 'title': 'Not Found', 'detail': \"Function 'bc205f8e-1740-40df-8d32-c4321763498a': Not found for account 'jf5O_2WIqwN4rQ4IWUicY01x5WJ3SvXOYoN-7VbGGhw'\"}",
+      "elapsed_s": 2.15
+    },
+    {
+      "in_listing": true,
+      "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+      "ok": true,
+      "answer": "nCT",
+      "parsed_label": "nCT",
+      "latency_s": 2.9
+    },
+    {
+      "in_listing": true,
+      "model": "meta/muse-glimmer-30b",
+      "ok": true,
+      "answer": "nCT",
+      "parsed_label": "nCT",
+      "latency_s": 12.24
+    },
+    {
+      "in_listing": false,
+      "model": "moonshotai/kimi-k3",
+      "ok": false,
+      "status": 410,
+      "error": "APIStatusError: Error code: 410 - {'type': 'about:blank', 'title': 'Gone', 'status': 410, 'detail': \"The model 'moonshotai/kimi-k3' has reached its end of life on 2026-10-15T08:00:00Z and is no longer available.\"}",
+      "elapsed_s": 1.01
+    },
+    {
+      "in_listing": true,
+      "model": "z-ai/glm-5.3-flash",
+      "ok": false,
+      "status": null,
+      "error": "APITimeoutError: Request timed out.",
+      "elapsed_s": 367.6
+    },
+    {
+      "in_listing": true,
+      "model": "deepseek-ai/deepseek-v4.1-flash",
+      "ok": false,
+      "status": null,
+      "error": "APITimeoutError: Request timed out.",
+      "elapsed_s": 367.91
+    },
+    {
+      "in_listing": true,
+      "model": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+      "ok": true,
+      "answer": "nCT",
+      "parsed_label": "nCT",
+      "latency_s": 3.4
+    }
+  ]
+}

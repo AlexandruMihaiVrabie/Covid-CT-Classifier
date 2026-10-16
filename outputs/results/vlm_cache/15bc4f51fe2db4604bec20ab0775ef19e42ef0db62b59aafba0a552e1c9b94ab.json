@@ -1,0 +1,7 @@
+{
+  "model": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+  "prompt": "You are shown one axial chest CT slice. Classify it into exactly one of these classes:\nnCT: normal. The lungs are visible and show no signs of COVID-19 pneumonia.\npCT: COVID-19 positive. The lungs are visible and show findings consistent with COVID-19 pneumonia, such as ground-glass opacities or consolidation.\nNiCT: non-informative. The slice does not show enough lung tissue to judge, for example it is at the level of the neck or the upper abdomen.\nAnswer with exactly one label: nCT, pCT or NiCT. Do not write anything else.",
+  "image_sha256": "af95001d48846dad608235562cf6f8d992ba010c8460ba7e85d98472932d48af",
+  "text": "pCT",
+  "latency_s": 2.494196333020227
+}
