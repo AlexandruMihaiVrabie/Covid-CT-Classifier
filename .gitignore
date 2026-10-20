@@ -24,3 +24,7 @@ htmlcov/
 
 # Resume state (weights + optimizer, ~3x the model size); best.pth IS committed
 outputs/checkpoints/last.pt
+
+# Cached encoder embeddings, index and text cache; only the summary JSONs are committed
+outputs/results/embeddings/*
+!outputs/results/embeddings/*.json

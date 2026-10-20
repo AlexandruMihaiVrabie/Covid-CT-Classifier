@@ -1,0 +1,887 @@
+{
+  "encoder": "biomedclip",
+  "model_id": "hf-hub:microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224",
+  "embedding_dim": 512,
+  "n": {
+    "train": 13778,
+    "val": 2951,
+    "test": 2956
+  },
+  "protocol": "L2-normalised embeddings; probe hyperparameters and zero-shot prompt set selected on val macro-F1 only; probe fit on train; test scored once.",
+  "probe": {
+    "grid": [
+      {
+        "C": 0.01,
+        "class_weight": null,
+        "val_macro_f1": 0.8797725387546446,
+        "val_accuracy": 0.8983395459166384
+      },
+      {
+        "C": 0.1,
+        "class_weight": null,
+        "val_macro_f1": 0.9255396372509063,
+        "val_accuracy": 0.9332429684852592
+      },
+      {
+        "C": 1.0,
+        "class_weight": null,
+        "val_macro_f1": 0.951059746898305,
+        "val_accuracy": 0.955269400203321
+      },
+      {
+        "C": 10.0,
+        "class_weight": null,
+        "val_macro_f1": 0.9683931054745987,
+        "val_accuracy": 0.9705184683158251
+      },
+      {
+        "C": 100.0,
+        "class_weight": null,
+        "val_macro_f1": 0.96707583548236,
+        "val_accuracy": 0.9688241274144358
+      },
+      {
+        "C": 0.01,
+        "class_weight": "balanced",
+        "val_macro_f1": 0.9164345484757829,
+        "val_accuracy": 0.9237546594374788
+      },
+      {
+        "C": 0.1,
+        "class_weight": "balanced",
+        "val_macro_f1": 0.9303239497676522,
+        "val_accuracy": 0.9359539139274822
+      },
+      {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "val_macro_f1": 0.958066857105878,
+        "val_accuracy": 0.9606912910877669
+      },
+      {
+        "C": 10.0,
+        "class_weight": "balanced",
+        "val_macro_f1": 0.9643833652111616,
+        "val_accuracy": 0.9664520501524907
+      },
+      {
+        "C": 100.0,
+        "class_weight": "balanced",
+        "val_macro_f1": 0.9652306993681049,
+        "val_accuracy": 0.9667909183327685
+      }
+    ],
+    "selected": {
+      "C": 10.0,
+      "class_weight": null
+    },
+    "val": {
+      "n": 2951,
+      "accuracy": 0.9705184683158251,
+      "macro_f1": 0.9683931054745987,
+      "per_class": {
+        "nCT": {
+          "precision": 0.9689564068692206,
+          "recall": 0.9806149732620321,
+          "f1": 0.9747508305647841,
+          "support": 1496,
+          "correct": 1467,
+          "recall_ci95": [
+            0.9722984432807255,
+            0.9864694692775072
+          ]
+        },
+        "pCT": {
+          "precision": 0.9742710120068611,
+          "recall": 0.9466666666666667,
+          "f1": 0.9602704987320372,
+          "support": 600,
+          "correct": 568,
+          "recall_ci95": [
+            0.9256788741411774,
+            0.9619711320856212
+          ]
+        },
+        "NiCT": {
+          "precision": 0.9707259953161592,
+          "recall": 0.9695906432748538,
+          "f1": 0.9701579871269749,
+          "support": 855,
+          "correct": 829,
+          "recall_ci95": [
+            0.9558155411230377,
+            0.9791647858662466
+          ]
+        }
+      },
+      "confusion_matrix": [
+        [
+          1467,
+          9,
+          20
+        ],
+        [
+          27,
+          568,
+          5
+        ],
+        [
+          20,
+          6,
+          829
+        ]
+      ],
+      "correct": 2864,
+      "accuracy_ci95": [
+        0.9637770433784019,
+        0.9760364478084014
+      ]
+    },
+    "test": {
+      "n": 2956,
+      "accuracy": 0.9749661705006766,
+      "macro_f1": 0.9724228523180383,
+      "per_class": {
+        "nCT": {
+          "precision": 0.9711475409836066,
+          "recall": 0.9886515353805073,
+          "f1": 0.9798213695004961,
+          "support": 1498,
+          "correct": 1481,
+          "recall_ci95": [
+            0.9819005606984912,
+            0.9929026409174448
+          ]
+        },
+        "pCT": {
+          "precision": 0.9727891156462585,
+          "recall": 0.9517470881863561,
+          "f1": 0.9621530698065601,
+          "support": 601,
+          "correct": 572,
+          "recall_ci95": [
+            0.9315597000221166,
+            0.9661960099025976
+          ]
+        },
+        "NiCT": {
+          "precision": 0.9833926453143536,
+          "recall": 0.9673278879813302,
+          "f1": 0.9752941176470589,
+          "support": 857,
+          "correct": 829,
+          "recall_ci95": [
+            0.9531846702103094,
+            0.9773001019010755
+          ]
+        }
+      },
+      "confusion_matrix": [
+        [
+          1481,
+          5,
+          12
+        ],
+        [
+          27,
+          572,
+          2
+        ],
+        [
+          17,
+          11,
+          829
+        ]
+      ],
+      "correct": 2882,
+      "accuracy_ci95": [
+        0.9686877099949539,
+        0.9800117068927606
+      ]
+    }
+  },
+  "zero_shot": {
+    "prompt_sets": {
+      "short": {
+        "nCT": [
+          "a normal chest CT scan"
+        ],
+        "pCT": [
+          "a chest CT scan with COVID-19 pneumonia"
+        ],
+        "NiCT": [
+          "a CT slice without lung tissue"
+        ]
+      },
+      "biomedclip_template": {
+        "nCT": [
+          "this is a photo of a normal chest CT scan"
+        ],
+        "pCT": [
+          "this is a photo of a chest CT scan showing COVID-19 pneumonia"
+        ],
+        "NiCT": [
+          "this is a photo of a CT slice that does not show the lungs"
+        ]
+      },
+      "descriptive": {
+        "nCT": [
+          "an axial chest CT slice showing normal healthy lungs",
+          "a chest CT image of clear lungs with no opacities"
+        ],
+        "pCT": [
+          "an axial chest CT slice showing ground-glass opacities of COVID-19 pneumonia",
+          "a chest CT image of lungs with bilateral consolidation from COVID-19"
+        ],
+        "NiCT": [
+          "an axial CT slice of the neck or upper abdomen with no lungs visible",
+          "a non-informative CT image without lung parenchyma"
+        ]
+      }
+    },
+    "val_by_prompt_set": {
+      "short": {
+        "n": 2951,
+        "accuracy": 0.8163334462893934,
+        "macro_f1": 0.8131094766882759,
+        "per_class": {
+          "nCT": {
+            "precision": 0.8214747736093143,
+            "recall": 0.8489304812834224,
+            "f1": 0.8349769888231426,
+            "support": 1496,
+            "correct": 1270,
+            "recall_ci95": [
+              0.8298905716660353,
+              0.8661829336961308
+            ]
+          },
+          "pCT": {
+            "precision": 0.9539473684210527,
+            "recall": 0.725,
+            "f1": 0.8238636363636364,
+            "support": 600,
+            "correct": 435,
+            "recall_ci95": [
+              0.6879250597937813,
+              0.759212070208524
+            ]
+          },
+          "NiCT": {
+            "precision": 0.7418335089567967,
+            "recall": 0.8233918128654971,
+            "f1": 0.7804878048780488,
+            "support": 855,
+            "correct": 704,
+            "recall_ci95": [
+              0.7964002960097117,
+              0.8474902654162836
+            ]
+          }
+        },
+        "confusion_matrix": [
+          [
+            1270,
+            20,
+            206
+          ],
+          [
+            126,
+            435,
+            39
+          ],
+          [
+            150,
+            1,
+            704
+          ]
+        ],
+        "correct": 2409,
+        "accuracy_ci95": [
+          0.8019544401289344,
+          0.8298899199883728
+        ]
+      },
+      "biomedclip_template": {
+        "n": 2951,
+        "accuracy": 0.8488647915960691,
+        "macro_f1": 0.8474834840824097,
+        "per_class": {
+          "nCT": {
+            "precision": 0.926040061633282,
+            "recall": 0.803475935828877,
+            "f1": 0.8604151753758053,
+            "support": 1496,
+            "correct": 1202,
+            "recall_ci95": [
+              0.7825728925928624,
+              0.8228243706914736
+            ]
+          },
+          "pCT": {
+            "precision": 0.9220272904483431,
+            "recall": 0.7883333333333333,
+            "f1": 0.8499550763701708,
+            "support": 600,
+            "correct": 473,
+            "recall_ci95": [
+              0.7538655298077712,
+              0.8191324219729608
+            ]
+          },
+          "NiCT": {
+            "precision": 0.7280701754385965,
+            "recall": 0.9707602339181286,
+            "f1": 0.8320802005012531,
+            "support": 855,
+            "correct": 830,
+            "recall_ci95": [
+              0.9571915695889006,
+              0.9801174755248898
+            ]
+          }
+        },
+        "confusion_matrix": [
+          [
+            1202,
+            39,
+            255
+          ],
+          [
+            72,
+            473,
+            55
+          ],
+          [
+            24,
+            1,
+            830
+          ]
+        ],
+        "correct": 2505,
+        "accuracy_ci95": [
+          0.835488369190477,
+          0.8613340933063282
+        ]
+      },
+      "descriptive": {
+        "n": 2951,
+        "accuracy": 0.8553032870213487,
+        "macro_f1": 0.8391704431281473,
+        "per_class": {
+          "nCT": {
+            "precision": 0.8191990577149588,
+            "recall": 0.9298128342245989,
+            "f1": 0.8710081402629931,
+            "support": 1496,
+            "correct": 1391,
+            "recall_ci95": [
+              0.9157362995951962,
+              0.9416875776995793
+            ]
+          },
+          "pCT": {
+            "precision": 0.9579207920792079,
+            "recall": 0.645,
+            "f1": 0.7709163346613546,
+            "support": 600,
+            "correct": 387,
+            "recall_ci95": [
+              0.6058993236153297,
+              0.6822557157194892
+            ]
+          },
+          "NiCT": {
+            "precision": 0.8786808009422851,
+            "recall": 0.8725146198830409,
+            "f1": 0.8755868544600939,
+            "support": 855,
+            "correct": 746,
+            "recall_ci95": [
+              0.8484805007109842,
+              0.893216221944276
+            ]
+          }
+        },
+        "confusion_matrix": [
+          [
+            1391,
+            14,
+            91
+          ],
+          [
+            201,
+            387,
+            12
+          ],
+          [
+            106,
+            3,
+            746
+          ]
+        ],
+        "correct": 2524,
+        "accuracy_ci95": [
+          0.8421483011749851,
+          0.8675344107510958
+        ]
+      }
+    },
+    "selected_prompt_set": "biomedclip_template",
+    "test": {
+      "n": 2956,
+      "accuracy": 0.8585926928281461,
+      "macro_f1": 0.8535106453387167,
+      "per_class": {
+        "nCT": {
+          "precision": 0.9192592592592592,
+          "recall": 0.828437917222964,
+          "f1": 0.8714887640449438,
+          "support": 1498,
+          "correct": 1241,
+          "recall_ci95": [
+            0.8085121978246272,
+            0.8466833967041167
+          ]
+        },
+        "pCT": {
+          "precision": 0.9019230769230769,
+          "recall": 0.7803660565723793,
+          "f1": 0.8367528991971455,
+          "support": 601,
+          "correct": 469,
+          "recall_ci95": [
+            0.7455433781260619,
+            0.8116272926743593
+          ]
+        },
+        "NiCT": {
+          "precision": 0.7624309392265194,
+          "recall": 0.9661610268378062,
+          "f1": 0.8522902727740608,
+          "support": 857,
+          "correct": 828,
+          "recall_ci95": [
+            0.9518239901245745,
+            0.9763374741912761
+          ]
+        }
+      },
+      "confusion_matrix": [
+        [
+          1241,
+          44,
+          213
+        ],
+        [
+          87,
+          469,
+          45
+        ],
+        [
+          22,
+          7,
+          828
+        ]
+      ],
+      "correct": 2538,
+      "accuracy_ci95": [
+        0.8455655371082915,
+        0.870689008405225
+      ]
+    }
+  },
+  "cnn_test_recheck_vs_metrics_json": {
+    "abs_diff": {
+      "accuracy": 0.0,
+      "macro_f1": 0.0
+    },
+    "confusion_matrix_identical": true,
+    "passed": true
+  },
+  "mcnemar_cnn_vs_probe_full_test": {
+    "n_pairs": 2956,
+    "ref_only_correct": 65,
+    "other_only_correct": 14,
+    "p_value": 5.194941262584352e-09
+  },
+  "subset_100": {
+    "images": [
+      "nCT888.jpg",
+      "nCT229.jpg",
+      "nCT126.jpg",
+      "nCT4353.jpg",
+      "nCT4012.jpg",
+      "nCT3789.jpg",
+      "nCT2595.jpg",
+      "nCT2148.jpg",
+      "nCT9261.jpg",
+      "nCT7574.jpg",
+      "nCT1977.jpg",
+      "nCT8200.jpg",
+      "nCT6133.jpg",
+      "nCT1321.jpg",
+      "nCT1308.jpg",
+      "nCT2064.jpg",
+      "nCT3706.jpg",
+      "nCT3892.jpg",
+      "nCT7156.jpg",
+      "nCT8319.jpg",
+      "nCT1270.jpg",
+      "nCT7754.jpg",
+      "nCT350.jpg",
+      "nCT9781.jpg",
+      "nCT8990.jpg",
+      "nCT959.jpg",
+      "nCT610.jpg",
+      "nCT3734.jpg",
+      "nCT6524.jpg",
+      "nCT8168.jpg",
+      "nCT4387.jpg",
+      "nCT1085.jpg",
+      "nCT2886.jpg",
+      "nCT9514.jpg",
+      "pCT3642.jpg",
+      "pCT3164.jpg",
+      "pCT2765.jpg",
+      "pCT2041.jpg",
+      "pCT2412.jpg",
+      "pCT3131.jpg",
+      "pCT1740.jpg",
+      "pCT1653.jpg",
+      "pCT3412.jpg",
+      "pCT1698.jpg",
+      "pCT3276.jpg",
+      "pCT318.jpg",
+      "pCT2685.jpg",
+      "pCT1338.jpg",
+      "pCT3895.jpg",
+      "pCT69.jpg",
+      "pCT1833.jpg",
+      "pCT3392.jpg",
+      "pCT158.jpg",
+      "pCT770.jpg",
+      "pCT2864.jpg",
+      "pCT3295.jpg",
+      "pCT93.jpg",
+      "pCT2241.jpg",
+      "pCT1516.jpg",
+      "pCT1341.jpg",
+      "pCT249.jpg",
+      "pCT2843.jpg",
+      "pCT1580.jpg",
+      "pCT251.jpg",
+      "pCT1717.jpg",
+      "pCT3856.jpg",
+      "pCT3318.jpg",
+      "NiCT1972.jpg",
+      "NiCT3201.jpg",
+      "NiCT3110.jpg",
+      "NiCT2254.jpg",
+      "NiCT5073.jpg",
+      "NiCT2601.jpg",
+      "NiCT5255.jpg",
+      "NiCT5166.jpg",
+      "NiCT4904.jpg",
+      "NiCT141.jpg",
+      "NiCT4628.jpg",
+      "NiCT4834.jpg",
+      "NiCT2034.jpg",
+      "NiCT4197.jpg",
+      "NiCT5459.jpg",
+      "NiCT2472.jpg",
+      "NiCT1982.jpg",
+      "NiCT3714.jpg",
+      "NiCT3245.jpg",
+      "NiCT2615.jpg",
+      "NiCT4845.jpg",
+      "NiCT5194.jpg",
+      "NiCT4349.jpg",
+      "NiCT2318.jpg",
+      "NiCT5170.jpg",
+      "NiCT2957.jpg",
+      "NiCT574.jpg",
+      "NiCT617.jpg",
+      "NiCT1325.jpg",
+      "NiCT2373.jpg",
+      "NiCT920.jpg",
+      "NiCT1201.jpg",
+      "NiCT785.jpg"
+    ],
+    "probe": {
+      "n": 100,
+      "accuracy": 0.95,
+      "macro_f1": 0.9502238502238501,
+      "per_class": {
+        "nCT": {
+          "precision": 0.8947368421052632,
+          "recall": 1.0,
+          "f1": 0.9444444444444444,
+          "support": 34,
+          "correct": 34,
+          "recall_ci95": [
+            0.8984820937803899,
+            1.0
+          ]
+        },
+        "pCT": {
+          "precision": 0.96875,
+          "recall": 0.9393939393939394,
+          "f1": 0.9538461538461539,
+          "support": 33,
+          "correct": 31,
+          "recall_ci95": [
+            0.8039341828220181,
+            0.9832194695709291
+          ]
+        },
+        "NiCT": {
+          "precision": 1.0,
+          "recall": 0.9090909090909091,
+          "f1": 0.9523809523809523,
+          "support": 33,
+          "correct": 30,
+          "recall_ci95": [
+            0.7642705646564897,
+            0.968596628950737
+          ]
+        }
+      },
+      "confusion_matrix": [
+        [
+          34,
+          0,
+          0
+        ],
+        [
+          2,
+          31,
+          0
+        ],
+        [
+          2,
+          1,
+          30
+        ]
+      ],
+      "correct": 95,
+      "accuracy_ci95": [
+        0.8882480347279118,
+        0.9784566385436864
+      ]
+    },
+    "zero_shot": {
+      "n": 100,
+      "accuracy": 0.8,
+      "macro_f1": 0.801556517661627,
+      "per_class": {
+        "nCT": {
+          "precision": 0.7352941176470589,
+          "recall": 0.7352941176470589,
+          "f1": 0.7352941176470589,
+          "support": 34,
+          "correct": 25,
+          "recall_ci95": [
+            0.5688253783710155,
+            0.8539897245844621
+          ]
+        },
+        "pCT": {
+          "precision": 0.9615384615384616,
+          "recall": 0.7575757575757576,
+          "f1": 0.847457627118644,
+          "support": 33,
+          "correct": 25,
+          "recall_ci95": [
+            0.5897505131450971,
+            0.8716843865335271
+          ]
+        },
+        "NiCT": {
+          "precision": 0.75,
+          "recall": 0.9090909090909091,
+          "f1": 0.821917808219178,
+          "support": 33,
+          "correct": 30,
+          "recall_ci95": [
+            0.7642705646564897,
+            0.968596628950737
+          ]
+        }
+      },
+      "confusion_matrix": [
+        [
+          25,
+          1,
+          8
+        ],
+        [
+          6,
+          25,
+          2
+        ],
+        [
+          3,
+          0,
+          30
+        ]
+      ],
+      "correct": 80,
+      "accuracy_ci95": [
+        0.7111690380734977,
+        0.8666340774409013
+      ]
+    },
+    "cnn_rerun_matches_vlm_raw": true
+  },
+  "duplicate_sensitivity": {
+    "data_report_duplicates_across_splits": {
+      "train-val": 12,
+      "train-test": 15,
+      "val-test": 0
+    },
+    "test_images_with_exact_duplicate_in_train": 15,
+    "test_images": [
+      "NiCT1144.jpg",
+      "NiCT1247.jpg",
+      "NiCT138.jpg",
+      "NiCT1409.jpg",
+      "NiCT1421.jpg",
+      "NiCT1435.jpg",
+      "NiCT1448.jpg",
+      "NiCT170.jpg",
+      "NiCT38.jpg",
+      "NiCT431.jpg",
+      "NiCT587.jpg",
+      "NiCT815.jpg",
+      "NiCT875.jpg",
+      "NiCT905.jpg",
+      "NiCT989.jpg"
+    ],
+    "n_without": 2941,
+    "cnn_without": {
+      "n": 2941,
+      "accuracy": 0.9921795307718463,
+      "macro_f1": 0.9915743256263082,
+      "per_class": {
+        "nCT": {
+          "precision": 0.9959839357429718,
+          "recall": 0.9933244325767691,
+          "f1": 0.9946524064171123,
+          "support": 1498,
+          "correct": 1488,
+          "recall_ci95": [
+            0.9877551120146159,
+            0.9963699781413634
+          ]
+        },
+        "pCT": {
+          "precision": 0.9916943521594684,
+          "recall": 0.9933444259567388,
+          "f1": 0.9925187032418953,
+          "support": 601,
+          "correct": 597,
+          "recall_ci95": [
+            0.9830131173284197,
+            0.9974088642284044
+          ]
+        },
+        "NiCT": {
+          "precision": 0.9857988165680474,
+          "recall": 0.9893111638954869,
+          "f1": 0.9875518672199171,
+          "support": 842,
+          "correct": 833,
+          "recall_ci95": [
+            0.979811071423292,
+            0.9943665996678436
+          ]
+        }
+      },
+      "confusion_matrix": [
+        [
+          1488,
+          2,
+          8
+        ],
+        [
+          0,
+          597,
+          4
+        ],
+        [
+          6,
+          3,
+          833
+        ]
+      ],
+      "correct": 2918,
+      "accuracy_ci95": [
+        0.9882917995798748,
+        0.9947831474733044
+      ]
+    },
+    "probe_without": {
+      "n": 2941,
+      "accuracy": 0.9748384903094186,
+      "macro_f1": 0.9722749129027513,
+      "per_class": {
+        "nCT": {
+          "precision": 0.9711475409836066,
+          "recall": 0.9886515353805073,
+          "f1": 0.9798213695004961,
+          "support": 1498,
+          "correct": 1481,
+          "recall_ci95": [
+            0.9819005606984912,
+            0.9929026409174448
+          ]
+        },
+        "pCT": {
+          "precision": 0.9727891156462585,
+          "recall": 0.9517470881863561,
+          "f1": 0.9621530698065601,
+          "support": 601,
+          "correct": 572,
+          "recall_ci95": [
+            0.9315597000221166,
+            0.9661960099025976
+          ]
+        },
+        "NiCT": {
+          "precision": 0.9830917874396136,
+          "recall": 0.9667458432304038,
+          "f1": 0.9748502994011976,
+          "support": 842,
+          "correct": 814,
+          "recall_ci95": [
+            0.9523580217352048,
+            0.9768939800580387
+          ]
+        }
+      },
+      "confusion_matrix": [
+        [
+          1481,
+          5,
+          12
+        ],
+        [
+          27,
+          572,
+          2
+        ],
+        [
+          17,
+          11,
+          814
+        ]
+      ],
+      "correct": 2867,
+      "accuracy_ci95": [
+        0.9685285838171315,
+        0.9799095257232934
+      ]
+    }
+  }
+}

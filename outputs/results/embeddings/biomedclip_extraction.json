@@ -1,0 +1,28 @@
+{
+  "encoder": "biomedclip",
+  "model_id": "hf-hub:microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224",
+  "device": "mps",
+  "splits": {
+    "test": {
+      "n": 2956,
+      "dim": 512,
+      "computed_this_run": 2956,
+      "seconds_this_run": 173.20913462503813,
+      "finite": true
+    },
+    "val": {
+      "n": 2951,
+      "dim": 512,
+      "computed_this_run": 2951,
+      "seconds_this_run": 169.31548958300846,
+      "finite": true
+    },
+    "train": {
+      "n": 13778,
+      "dim": 512,
+      "computed_this_run": 13778,
+      "seconds_this_run": 809.2305993329501,
+      "finite": true
+    }
+  }
+}
