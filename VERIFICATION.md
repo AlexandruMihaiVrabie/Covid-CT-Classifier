@@ -2,7 +2,7 @@
 
 Stage 8 of the project plan: every check below was actually run on 2026-10-20, and the
 output shown is copied from the terminal. Machine: MacBook Air M1, 8 GB RAM, macOS
-(Darwin 24.6.0), Python 3.11.0. Code state: commit `cb6883e` plus this stage's changes
+(Darwin 24.6.0), Python 3.11.0. Code state: commit `4af9396` ("feat: gradio app") plus this stage's changes
 (`app/smoke_check.py`, one extra test, this file).
 
 **Summary: all checks passed. No failures had to be fixed during this stage.**

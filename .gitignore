@@ -1,6 +1,10 @@
 # Secrets
 .env
 
+# Local working notes and prompts for the coding assistant (kept out of the public repo)
+CLAUDE.md
+docs/claude-code-prompt*.md
+
 # Dataset (read-only, never committed)
 archive/
 data/
