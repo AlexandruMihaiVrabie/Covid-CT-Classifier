@@ -66,6 +66,15 @@ def test_disclaimer_and_localhost(app_module) -> None:
     assert app_module.HOST == "127.0.0.1"
 
 
+def test_smoke_check_inputs(tmp_path: Path) -> None:
+    spec = importlib.util.spec_from_file_location("smoke", APP_PATH.parent / "smoke_check.py")
+    smoke = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(smoke)
+    colour, gray = smoke.non_ct_images(tmp_path)
+    assert Image.open(colour).mode == "RGB" and Image.open(gray).mode == "L"
+    assert all((smoke.EXAMPLES_DIR / n).exists() for n in smoke.EXAMPLES)
+
+
 def test_app_does_not_load_api_or_env_modules() -> None:
     code = (
         "import importlib.util, sys;"
